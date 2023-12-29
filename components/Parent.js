@@ -28,5 +28,52 @@ import Child from './Child';
     )
   }
 }
+/*
+package main
 
+import(
+    "bufio"
+    "os"
+    "strings"
+    "strconv"
+    "fmt"
+)
+
+func main(){
+ reader:=bufio.NewReader(os.Stdin)
+ iterations,_:=reader.ReadString('\n')
+ iterations=strings.TrimSpace(iterations)
+ iterationsInt,_:=strconv.ParseInt(iterations,10,64)
+
+ for i:=0; i < int(iterationsInt) ; i++ {
+ 
+ dimensions,_:=reader.ReadString('\n')
+ dimensions=strings.TrimSpace(dimensions)
+ dimensionsNew:=strings.Fields(dimensions)
+
+ row,_:=strconv.ParseInt(dimensionsNew[0],10,64)
+//  column,_:=strconv.ParseInt(dimensionsNew[1],10,64)
+  
+ var twoD [][]string
+
+
+ for j:=0; j < int(row) ; j++ {
+    dimensions1,_:=reader.ReadString('\n')
+ dimensions1=strings.TrimSpace(dimensions1)
+ dimensions1New:=strings.Fields(dimensions1)
+
+ twoD[j]=dimensions1New
+
+ }
+  fmt.Println(twoD)
+
+
+
+
+ }
+
+
+
+}
+*/
 export default Parent
